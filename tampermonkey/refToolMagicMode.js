@@ -25,10 +25,20 @@ function setMagicMode() {
     if (magicEnable === false){
         $("input.form-control").addClass('wrapper');
         $("select.form-control.ng-pristine.ng-valid").addClass('wrapper');
+        addGlobalStyle('body { background-image: url("https://i.imgur.com/m1qpD2r.gif") !important;}');
+        addGlobalStyle('div.panel.panel-default {background-image: url("https://i.imgur.com/m1qpD2r.gif");}');
+        addGlobalStyle('div.col-md-12 {background-image: url("https://66.media.tumblr.com/tumblr_lrbu1l9BJk1qgzxcao1_250.gif");}');
+        addGlobalStyle('div.panel-heading.clearfix.panel-heading-button {background-image: url("https://i.imgur.com/m1qpD2r.gif");}');
+        addGlobalStyle('nav.navbar.navbar-inverse {background-image: url("https://66.media.tumblr.com/tumblr_lrbu1l9BJk1qgzxcao1_250.gif");}');
         magicEnable = true;
     }else if(magicEnable === true){
         $("input.form-control").removeClass('wrapper');
         $("select.form-control.ng-pristine.ng-valid").removeClass('wrapper');
+        addGlobalStyle('body { background-image: none !important;}');
+        addGlobalStyle('div.panel.panel-default {background-image: none;}');
+        addGlobalStyle('div.col-md-12 {background-image: none;}');
+        addGlobalStyle('div.panel-heading.clearfix.panel-heading-button {background-image: none}');
+        addGlobalStyle('nav.navbar.navbar-inverse {background-image: none;}');
         magicEnable = false;
     }
 }
